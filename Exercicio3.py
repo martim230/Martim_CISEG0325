@@ -1,0 +1,6 @@
+num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o segundo número: "))
+crescente = sorted([num1, num2])
+decrescente = sorted([num1, num2], reverse=True)
+print(f"Ordem crescente: {crescente[0]}, {crescente[1]}")
+print(f"Ordem decrescente: {decrescente[0]}, {decrescente[1]}")
