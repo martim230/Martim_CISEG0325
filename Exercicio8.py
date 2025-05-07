@@ -1,15 +1,13 @@
-notas = []
+# Exercicio 8
+# Faça um algoritmo que gere a seguinte série: 10, 20, 30, 40, .. 980, 990, 1000.e outro a fazer 15, 25, 35, 985, 995.(dois ciclos)
 
-for i in range(1, 11):  
-    nota = float(input(f"Digite a nota do aluno {i} (0 a 20): "))
-    while nota < 0 or nota > 20:  
-        print("Nota inválida! Insira um valor entre 0 e 20.")
-        nota = float(input(f"Digite novamente a nota do aluno {i} (0 a 20): "))
-    notas.append(nota)
+print("Série: 10, 20, 30, ..., 1000")
 
-media = sum(notas) / len(notas)
+for i in range(10, 1001, 10):
+    print(i)
 
-alunos_acima_media = sum(1 for nota in notas if nota >= media)
+print("\nSérie: 15, 25, 35, ..., 995")
 
-print(f"\nA média das notas é: {media:.2f}")
-print(f"Quantidade de alunos com nota igual ou acima da média: {alunos_acima_media}")
+for i in range(15, 1000, 10):
+    print(i)
+

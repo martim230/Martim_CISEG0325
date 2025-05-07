@@ -1,29 +1,14 @@
-numero_mes = int(input("Digite um número de 1 a 12: "))
+# Exercicio 9
+# Escreva um programa que solicite um número ao utilizador até que o valor deste esteja entre os valores 1 e 100. 
+#(Use o ciclo do ... while) 
 
-match numero_mes:
-    case 1:
-        print("Janeiro")
-    case 2:
-        print("Fevereiro")
-    case 3:
-        print("Março")
-    case 4:
-        print("Abril")
-    case 5:
-        print("Maio")
-    case 6:
-        print("Junho")
-    case 7:
-        print("Julho")
-    case 8:
-        print("Agosto")
-    case 9:
-        print("Setembro")
-    case 10:
-        print("Outubro")
-    case 11:
-        print("Novembro")
-    case 12:
-        print("Dezembro")
-    case _:
-        print("Número inválido! Não corresponde a um mês.")
+# Simula um ciclo do...while para garantir que o número está entre 1 e 100
+
+while True:
+    numero = int(input("Introduz  um número entre 1 e 100: "))
+    
+    if 1 <= numero <= 100:
+        print(f"Número válido: {numero}")
+        break
+    else:
+        print("Valor inválido. Tenta novamente.")

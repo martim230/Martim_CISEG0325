@@ -1,6 +1,12 @@
-num1 = int(input("Digite o primeiro número: "))
-num2 = int(input("Digite o segundo número: "))
-crescente = sorted([num1, num2])
-decrescente = sorted([num1, num2], reverse=True)
-print(f"Ordem crescente: {crescente[0]}, {crescente[1]}")
-print(f"Ordem decrescente: {decrescente[0]}, {decrescente[1]}")
+# Exercicio 3
+# Ler a nota de 10 alunos, calcular a media e mostrar essa média.
+
+soma = 0
+
+for i in range(10):
+    nota = float(input(f"Digite a nota do aluno {i+1}: "))
+    soma += nota  # Soma as notas
+
+media = soma / 10
+
+print(f"\nA média das notas dos 10 alunos é: {media:.2f}")
